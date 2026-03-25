@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://dorm22xfhx2ak"]
+
+[ext_resource type="Script" uid="uid://co3uwx5kwi5hv" path="res://Game/game.gd" id="1_bk3v5"]
+[ext_resource type="Texture2D" uid="uid://cd1hke5cmc25w" path="res://Game/ic.png" id="2_1r4le"]
+
+[node name="Game" type="Control" unique_id=1175855252]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bk3v5")
+
+[node name="Button" type="Button" parent="." unique_id=1585162465]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -119.5
+offset_top = 143.0
+offset_right = 119.5
+offset_bottom = 225.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Hello Godot !"
+
+[node name="Label" type="Label" parent="." unique_id=54169442]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -331.0
+offset_top = -77.0
+offset_right = 336.0
+offset_bottom = 126.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 30
+text = "Hi Facebook!"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1594756737]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -100.0
+offset_top = -236.0
+offset_right = 100.0
+offset_bottom = -36.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_1r4le")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
